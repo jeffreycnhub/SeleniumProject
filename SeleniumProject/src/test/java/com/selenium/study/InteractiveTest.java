@@ -24,9 +24,6 @@ public class InteractiveTest {
         driver = new ChromeDriver();
         actions =new Actions(driver);
         driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
-
-
-
     }
     //鼠标操作
     @Test
@@ -96,6 +93,7 @@ public class InteractiveTest {
     @Test
     public void scrollTest(){
         try {
+            //
             driver.get("https://www.baidu.com");
             driver.manage().window().maximize();
             driver.findElement(By.id("kw")).sendKeys("霍格沃兹测试学院");
